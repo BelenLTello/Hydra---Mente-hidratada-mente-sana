@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydra -mente sana,mente hidratada . Inicio</title>
+  <!--
+    Optimización: Se mantienen las pre-conexiones para mejorar la carga de fuentes.
+    Se asegura que el enlace a la hoja de estilos principal esté presente.
+    El script defer para inicio.js se mantiene para no bloquear el renderizado.
+    Ya no puedo más
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <script defer src="inicio.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-shell">
+      <a href="#inicio" class="brand">
+        <img class="brand-logo" src="media/Logo 2.png" alt="Logo HYDRA">
+        <span class="brand-name">HYDRA</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navbar" id="navbar">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#mas-hidratacion">Más sobre la hidratación</a></li>
+          <li><a href="#videos">Videos</a></li>
+          <li><a href="#quienes-somos">Quiénes somos</a></li>
+          <li><a href="#aviso-legal">Declaración y Aviso Legal</a></li>
+          <li><a href="calculadora.html" target="_blank" class="nav-cta">Calcula tu hidratación ahora</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="inicio">
+    <img src="media/Fondo.png" alt="Fondo HYDRA" class="hero-image">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content reveal">
+      <p class="hero-badge">Bienestar • Energía • Enfoque</p>
+      <h1 class="hero-title">HYDRA</h1>
+      <h2 class="hero-subtitle">Mente hidratada,mente sana</h2>
+      <br>
+      <h4 class="hero-subtitle">Hidratación en adolescentes</h4>
+      <p class="hero-copy">Tu cuerpo y tu mente rinden mejor cuando reciben el agua que necesitan.</p>
+    </div>
+  </section>
+
+  <main class="main-content">
+    <section class="content-section reveal">
+      <div class="section-heading">
+        <span class="section-tag">Inicio</span>
+        <h2>Hidratación: más que solo tomar agua</h2>
+      </div>
+
+      <div class="content-card intro-card">
+        <p class="lead">Tu cuerpo no funciona “a medias”. Funciona bien o empieza a fallar… y el agua es una de las claves para mantenerlo al 100%.</p>
+        <p>La hidratación saludable no es solo tomar agua cuando tienes sed, sino mantener un equilibrio constante de líquidos en el cuerpo. Esto incluye el agua que bebes, la que está en tus alimentos (como frutas y verduras) y otras bebidas.</p>
+        <p>Cuando estás bien hidratado, tu cerebro piensa mejor, tu energía se mantiene estable y tu cuerpo rinde más en la escuela, el deporte y hasta en tu estado de ánimo.</p>
+      </div>
+    </section>
+
+    <section class="content-section reveal" id="mas-hidratacion">
+      <div class="section-heading">
+        <span class="section-tag">Más sobre la hidratación</span>
+        <h2>Lo que necesitas saber para cuidarte mejor</h2>
+      </div>
+
+      <div class="content-grid">
+        <article class="content-card">
+          <h3>¿Por qué es tan importante?</h3>
+          <p>Entre los 15 y 20 años tu cuerpo está en una etapa de alto rendimiento: estudias más, te mueves más y tu cerebro está en constante trabajo.</p>
+          <p>Una buena hidratación ayuda a:</p>
+          <ul class="feature-list">
+            <li>Mejorar la concentración y memoria</li>
+            <li>Evitar cansancio y dolor de cabeza</li>
+            <li>Mantener la energía durante el día</li>
+            <li>Favorecer el rendimiento físico y mental</li>
+          </ul>
+          <p>Incluso una ligera deshidratación puede hacerte sentir lento, distraído o agotado sin darte cuenta.</p>
+        </article>
+
+        <article class="content-card">
+          <h3>¿Cuánta agua necesitas realmente?</h3>
+          <p>No todos necesitan lo mismo. Depende de tu cuerpo.</p>
+          <p>Una forma sencilla de estimarlo es:</p>
+          <ul class="feature-list">
+            <li>Mujeres: 0.30 mL por cada kilo de peso</li>
+            <li>Hombres: 0.35 mL por cada kilo de peso</li>
+          </ul>
+          <p>Además, como referencia general en esta etapa:</p>
+          <ul class="feature-list">
+            <li>Mujeres: alrededor de 2.3 L al día</li>
+            <li>Hombres: alrededor de 3.3 L al día</li>
+          </ul>
+          <p>Y recuerda: no todo viene del vaso de agua. Aproximadamente 80% proviene de bebidas y 20% de alimentos.</p>
+        </article>
+      </div>
+
+      <div class="content-grid">
+        <article class="content-card">
+          <h3>Señales de que tu cuerpo está bien hidratado</h3>
+          <p>Tu cuerpo siempre da pistas, solo hay que saber leerlas:</p>
+          <ul class="feature-list">
+            <li>Te sientes con energía y enfocado en clases</li>
+            <li>Tu orina suele ser amarillo muy claro o casi transparente</li>
+            <li>No dependes de la sed para beber agua</li>
+          </ul>
+          <p>Ojo: esperar a tener mucha sed ya es una señal tardía de deshidratación.</p>
+        </article>
+
+        <article class="content-card">
+          <h3>Cosas que debes saber</h3>
+          <ul class="feature-list">
+            <li>No necesitas tomar agua solo en las comidas: lo ideal es hacerlo durante todo el día</li>
+            <li>Tomar demasiada agua sin necesidad también puede ser peligroso</li>
+            <li>Bebidas como refrescos, energéticas o industrializadas no hidratan igual que el agua natural</li>
+          </ul>
+          <p class="highlight-text">Y recuerda algo importante: si tu hidratación es adecuada, es más probable que te mantengas alerta durante toda la jornada escolar, sin esa caída de energía en las últimas clases</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section reveal" id="videos">
+      <div class="section-heading">
+        <span class="section-tag">Videos</span>
+        <h2>Contenido audiovisual</h2>
+      </div>
+
+      <div class="content-grid">
+        <article class="content-card video-card">
+          <h3>Video 1</h3>
+          <p>Video educativo sobre hidratación y hábitos saludables.</p>
+          <div class="video-frame">
+            <!--
+              Mejora: Se añade el atributo `loading="lazy"` a los iframes para optimizar el rendimiento.
+              Esto retrasa la carga de los iframes hasta que estén cerca del viewport,
+              lo cual es crucial para la velocidad de carga inicial de la página,
+              especialmente si hay muchos videos.
+              El problema de "No aparece la miniatura" suele ser un problema de CSS o de red,
+              pero `loading="lazy"` es una buena práctica de optimización.
+              Si las miniaturas no aparecen, se recomienda revisar `estilos.css` para asegurar
+              que las clases `.video-frame` o `.video-card` no estén ocultando o afectando
+              la visualización del iframe o su contenido.
+            -->
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/zLjnHJ3Zxe4"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <a class="video-link" href="https://www.youtube.com/watch?v=zLjnHJ3Zxe4" target="_blank" rel="noopener noreferrer">Abrir Video 1 en YouTube</a>
+        </article>
+        <article class="content-card video-card">
+          <h3>Video 2</h3>
+          <p>Descubre la ciencia detrás de la hidratación y aprende cuánta agua necesitas para mantener tu cuerpo y mente en equilibrio.</p>
+          <div class="video-frame">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/NAk1ChXPbyw"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+          </div>
+          <a class="video-link" href="https://www.youtube.com/watch?v=NAk1ChXPbyw" target="_blank" rel="noopener noreferrer">Abrir Video 2 en YouTube</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section reveal" id="quienes-somos">
+      <div class="section-heading">
+        <span class="section-tag">Quiénes somos</span>
+        <h2>El propósito del proyecto</h2>
+      </div>
+
+      <div class="content-card">
+        <h3>¿Por qué nace este proyecto?</h3>
+        <p>Hydra nace como respuesta a una problemática cada vez más común en México: muchos jóvenes no se están hidratando correctamente. En lugar de consumir agua natural, frecuentemente optan por refrescos, bebidas energéticas, jugos industrializados o bebidas con altos niveles de azúcar, las cuales pueden afectar negativamente su salud física y mental.</p>
+        <p>Esta situación, influenciada por la publicidad, el entorno social y el fácil acceso a este tipo de productos, ha provocado un cambio preocupante en los hábitos de hidratación de la juventud actual.</p>
+        <p>Frente a esta realidad, desarrollamos una herramienta práctica, educativa y accesible que permite a los usuarios conocer su nivel de hidratación al día y la cantidad de agua que necesitan al día, reflexionando sobre las decisiones que toman diariamente respecto a su consumo.</p>
+        <p>Somos alumnas del CBTis 145 comprometidas con la concientización sobre la salud y el bienestar juvenil. A través de Hydra buscamos informar, orientar y fomentar hábitos de hidratación más saludables de una manera innovadora, visual y fácil de entender.</p>
+      </div>
+    </section>
+
+    <section class="content-section reveal" id="aviso-legal">
+      <div class="section-heading">
+        <span class="section-tag">Declaración y Aviso Legal</span>
+        <h2>Información importante del proyecto</h2>
+      </div>
+
+      <div class="content-card legal-card">
+        <p>La información presentada en esta calculadora de hidratación tiene fines únicamente informativos, educativos y comparativos. Los resultados y porcentajes mostrados son aproximaciones basadas en investigaciones públicas sobre composición nutricional, contenido de agua, minerales, azúcares y electrolitos de distintas bebidas.</p>
+        <p>Este sitio no sustituye la opinión, diagnóstico o tratamiento de profesionales de la salud como médicos, nutriólogos o especialistas.</p>
+        <p>Todas las marcas, nombres comerciales y productos mencionados pertenecen a sus respectivos propietarios. Su uso dentro de esta página es únicamente con fines de identificación e investigación. Este proyecto no posee afiliación, patrocinio ni relación oficial con ninguna marca registrada.</p>
+      </div>
+    </section>
+
+    <section class="content-section reveal">
+      <div class="section-heading">
+        <span class="section-tag">Resultados</span>
+        <h2>¿Qué significan los niveles de hidratación?</h2>
+      </div>
+
+      <div class="content-card">
+        <p>El nivel de hidratación se expresa en forma de porcentaje, el cual representa qué tanto del requerimiento diario de líquidos estás cubriendo con tu consumo actual. Mientras más cercano estés al 100%, mejor hidratado se encuentra tu cuerpo.</p>
+        <p>Para que esta información sea más fácil de entender, aquí se muestra en una tabla clara y visual:</p>
+
+        <div class="table-wrap">
+          <table class="hydration-table">
+            <thead>
+              <tr>
+                <th>Porcentaje</th>
+                <th>Estado de hidratación</th>
+                <th>Consecuencias</th>
+                <th>Síntomas</th>
+                <th>Representación visual</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>0% - 30%</td><td>Muy mala hidratación</td><td>Riesgo alto de deshidratación y bajo rendimiento.</td><td>Fatiga, dolor de cabeza, dificultad para concentrarte.</td><td>🚨</td></tr>
+              <tr><td>30% - 50%</td><td>Deficiente hidratación</td><td>Tu cuerpo no recibe el agua suficiente para funcionar adecuadamente.</td><td>Cansancio, baja energía, malestar general.</td><td>😓</td></tr>
+              <tr><td>50% - 60%</td><td>Hidratación media</td><td>No hay riesgo inmediato, pero sí margen claro de mejora.</td><td>Menor energía y sensación de sequedad o sed ligera.</td><td>😐</td></tr>
+              <tr><td>60% - 80%</td><td>Buena hidratación</td><td>Tu cuerpo se mantiene equilibrado y funcional.</td><td>Buen rendimiento físico y mental.</td><td>🙂</td></tr>
+              <tr><td>80% - 100%</td><td>Excelente hidratación</td><td>Tu organismo cuenta con el agua necesaria para funcionar muy bien.</td><td>Buen enfoque, estabilidad y bienestar general.</td><td>💧✨</td></tr>
+              <tr><td>Más del 100%</td><td>Sobrehidratación</td><td>Podría alterarse el equilibrio de minerales en el cuerpo.</td><td>Molestia, pesadez o exceso de líquidos.</td><td>😵</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section reveal">
+      <div class="cta-card">
+        <p class="cta-label">¿Listo para descubrir tu nivel?</p>
+        <h2>Calcula tu hidratación ahora</h2>
+        <p>Da el siguiente paso y revisa tu resultado con la calculadora de HYDRA.</p>
+        <a href="calculadora.html" target="_blank" class="cta-button">Ir a la calculadora <span>→</span></a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

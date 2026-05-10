@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Chávez Cruz Nadia, Ibarra Sevilla Alison Ximena, López Tello Belén Guadalupe, Ordaz Jiménez Mayte Paola, Sánchez Melo Aylin">
+  <title>HYDRA - Calculadora de hidratación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos_calculadora.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="page-shell">
+    <section class="calculator-card">
+      <div class="hero">
+        <p class="eyebrow">HYDRA</p>
+        <h1>Calculadora de hidratación</h1>
+        <p class="hero-text">
+          Descubre cuánta agua necesitas al día en base a tus necesidades físicas, y tu nivel de hidratación únicamente tomando en cuenta las bebidas
+          que acostumbras consumir.
+        </p>
+      </div>
+
+      <form id="hydration-form" class="calculator-form" novalidate>
+        <section class="info-panel top-info-panel">
+          <h2>Datos personales</h2>
+
+          <div class="personal-grid">
+            <div class="field-group">
+              <span class="field-label">Género biológico</span>
+              <div class="option-row">
+                <label class="choice-pill">
+                  <input type="radio" name="bio" value="femenino" required>
+                  <span>Femenino</span>
+                </label>
+                <label class="choice-pill">
+                  <input type="radio" name="bio" value="masculino">
+                  <span>Masculino</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="edad">Edad</label>
+              <input id="edad" name="edad" class="text-field" type="number" min="15" max="20" placeholder="Solo entre 15 y 20 años" required>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="peso">Peso (kg)</label>
+              <input id="peso" name="peso" class="text-field" type="number" min="30" max="250" step="0.1" placeholder="Ej. 62.5" required>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="actividad">Nivel de actividad física</label>
+              <select id="actividad" name="actividad" class="text-field" required>
+                <option value="">Selecciona una opción</option>
+                <option value="sedentario">Sedentario</option>
+                <option value="ligero">Ligero (10 a 30 min)</option>
+                <option value="moderado">Moderado (30 a 60 min)</option>
+                <option value="intenso">Muy activo (más de 1 hora)</option>
+              </select>
+            </div>
+          </div>
+
+          <p class="helper-text">
+            La recomendación base considera el género biológico, el peso corporal y un extra por actividad física.
+            Cada bebida suma hidratación equivalente según los mililitros ingresados y su puntaje de hidratación.
+          </p>
+        </section>
+
+        <section class="drinks-panel">
+          <div class="panel-head">
+            <h2>Bebidas consumidas</h2>
+            <p>Elige una categoría, selecciona tus bebidas e ingresa la cantidad exacta tomada en mililitros.</p>
+          </div>
+
+          <div class="field-group category-filter">
+            <label class="field-label" for="categoria-bebida">Categoría de bebidas</label>
+            <select id="categoria-bebida" class="text-field">
+              <option value="todas">Todas las categorías</option>
+            </select>
+          </div>
+
+          <div id="drink-groups" class="drink-groups" aria-live="polite"></div>
+        </section>
+
+        <div class="action-row">
+          <button type="submit" class="primary-btn">Calcular hidratación</button>
+          <button type="reset" class="secondary-btn">Limpiar datos</button>
+        </div>
+      </form>
+
+      <section id="resultados" class="results-card" aria-live="polite" aria-atomic="true">
+        <div class="results-placeholder">
+          <h2>Resultados</h2>
+          <p>Completa el formulario para ver tu recomendación de agua, tu porcentaje de hidratación y tu estado actual.</p>
+        </div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>
