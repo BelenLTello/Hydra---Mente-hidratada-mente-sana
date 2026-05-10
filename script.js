@@ -596,12 +596,17 @@ ageField.addEventListener("input", () => {
   const currentValue = ageField.value;
   if (currentValue === "") return;
 
-  const numericAge = Number(currentValue);
-  if (numericAge < 15) {
-    ageField.value = "15";
-  } else if (numericAge > 20) {
-    ageField.value = "20";
-  }
+  //const numericAge = Number(currentValue);
+ // if (numericAge < 15) {
+  //  ageField.value = "15";
+  //} else if (numericAge > 20) {
+   // ageField.value = "20";
+ // }
+
+  if (!Number.isFinite(age) || age < 15 || age > 20) {
+  return "Ingresa una edad válida entre 15 y 20 años.";
+}
+
 });
 
 form.addEventListener("submit", handleSubmit);
