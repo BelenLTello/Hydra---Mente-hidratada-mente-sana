@@ -607,6 +607,9 @@ ageField.addEventListener("input", () => {
   return "Ingresa una edad válida entre 15 y 20 años.";
 }
 
+if (numericAge > 20){
+  ageField.value = "20"
+}
 });
 
 form.addEventListener("submit", handleSubmit);
